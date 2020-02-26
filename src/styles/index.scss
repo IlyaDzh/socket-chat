@@ -1,5 +1,9 @@
 @import '~antd/dist/antd.css';
 
+* {
+    outline: none;
+}
+
 body, html, #root, .wrapper {
     height: 100%;
 }

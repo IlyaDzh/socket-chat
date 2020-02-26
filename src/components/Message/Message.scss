@@ -24,24 +24,25 @@
         }
 
         &__date {
-            font-size: 12px;
+            text-align: center;
+            font-size: 13px;
             font-weight: 500;
-            opacity: 0.5;
+            opacity: 0.8;
         }
     }
 
     &-content {
         &__name {
             font-weight: 500;
-            margin-bottom: 4px;
-            opacity: 0.7;
+            margin-bottom: 3px;
+            opacity: 0.9;
         }
 
         &__bubble {
             display: inline-block;
             background: #3674ff;
             box-shadow: 0 5px 5px rgba(54, 116, 255, 0.20);
-            border-radius: 15px;
+            border-radius: 30px;
             padding: 8px 15px;
             margin-bottom: 8px;
 
@@ -85,8 +86,7 @@
         #{$self}-content__bubble {
             background: #fff;
             border: 1px solid #ececec;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
-            border-radius: 15px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
 
             p {
                 color: #000;
@@ -103,6 +103,89 @@
             img {
                 width: 150px;
                 height: 150px;
+            }
+        }
+    }
+
+    &--me.message--audio {
+        #{$self}-content__bubble {
+            background: #fff;
+            border: 1px solid #ececec;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        #{$self}-inner {
+            width: 100%;
+        }
+
+        #{$self}-audio__progress {
+            background-color: #d1d1d2;
+        }
+
+        #{$self}-audio__info {
+            &-btn {
+                button {
+                    background: #a8a9ab;
+                }
+            }
+
+            &-duration {
+                color: #000;
+            }
+        }
+    }
+
+    &--audio {
+        #{$self}-inner {
+            max-width: 320px;
+        }
+
+        #{$self}-content {
+            width: 100%;
+        }
+
+        #{$self}-content__bubble {
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #{$self}-audio__progress {
+            height: 37px;
+            position: absolute;
+            background-color: #2b5dc5;
+            transition: width 0.5s ease;
+        }
+
+        #{$self}-audio__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+
+            &-btn {
+                button {
+                    padding: 0;
+                    width: 38px;
+                    height: 37px;
+                    border: none;
+                    border-radius: 30px;
+                    background: #1644a8;
+                    cursor: pointer;
+                }
+            }
+
+            &-wave {
+                display: flex;
+            }
+
+            &-duration {
+                padding-right: 10px;
+                color: #fff;
+                font-weight: 500;
+                opacity: 0.8;
             }
         }
     }

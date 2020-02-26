@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button as ButtonAnt } from 'antd';

@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 import { Message } from 'components';
-import './Home.scss'
+import './Home.scss';
 
 const Home = () => {
     return (
@@ -9,8 +9,7 @@ const Home = () => {
             <Message
                 avatar='https://source.unsplash.com/collection/190727/1600x900&rnd=1'
                 user='Maxim Sergeevich'
-                text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae facere, nemo sapiente 
-                quas perspiciatis laudantium tempora similique quibusdam? Non, vitae!'
+                text='Lorem ipsum dolor sit.'
                 attachments={[
                     {
                         filename: 'image.jpg',
@@ -25,14 +24,14 @@ const Home = () => {
                         url: 'https://source.unsplash.com/collection/190727/1600x900&rnd=5'
                     }
                 ]}
-                date='15:26 PM'
+                date={new Date()}
             />
             <Message
                 avatar='https://source.unsplash.com/collection/190727/1600x900&rnd=2'
                 user='Ilya Dolzhenko'
                 text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae facere, nemo sapiente 
                 quas perspiciatis laudantium'
-                date='16:08 PM'
+                date={new Date()}
                 isMe
             />
             <Message
@@ -44,7 +43,20 @@ const Home = () => {
                         url: 'https://source.unsplash.com/collection/190727/1600x900&rnd=9'
                     }
                 ]}
-                date='16:37 PM'
+                date={new Date()}
+            />
+            <Message
+                avatar='https://source.unsplash.com/collection/190727/1600x900&rnd=2'
+                user='Ilya Dolzhenko'
+                audioSrc="https://notificationsounds.com/soundfiles/b5b41fac0361d157d9673ecb926af5ae/file-sounds-727-good-morning.mp3"
+                date={new Date()}
+                isMe
+            />
+            <Message
+                avatar='https://source.unsplash.com/collection/190727/1600x900&rnd=1'
+                user='Maxim Sergeevich'
+                audioSrc="https://notificationsounds.com/soundfiles/b5b41fac0361d157d9673ecb926af5ae/file-sounds-727-good-morning.mp3"
+                date={new Date()}
             />
         </section>
     )
