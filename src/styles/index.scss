@@ -4,10 +4,30 @@
     outline: none;
 }
 
-body, html, #root, .wrapper {
+body {
+    background-color: #f4f7fd;
+}
+
+body,
+html,
+#root,
+.wrapper {
     height: 100%;
 }
 
 p {
     margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+
+    &-track {
+        background-color: #d6d6d6;
+    }
+
+    &-thumb {
+        background-color: #8d8d8d;
+        border-radius: 3px;
+    }
 }

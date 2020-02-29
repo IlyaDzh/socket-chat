@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form, Input, Icon } from 'antd';
+import { Form, Input } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 import { ShadowBlock, Button } from 'components';
 import './Auth.scss';
@@ -15,7 +16,7 @@ const Auth = () => (
                 <Form className="login-form">
                     <Form.Item>
                         <Input
-                            prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                            prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
                             size='large'
                             placeholder="Никнейм"
                         />

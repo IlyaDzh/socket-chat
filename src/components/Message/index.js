@@ -77,7 +77,7 @@ const Message = ({ avatar, user, text, audioSrc, attachments, date, isMe }) => {
     return (
         <div className={classNames('message', {
             'message--me': isMe,
-            'message--image': attachments && attachments.length === 1,
+            'message--image': !text && attachments && attachments.length === 1,
             'message--audio': audioSrc
         })}>
             <div className='message-inner'>

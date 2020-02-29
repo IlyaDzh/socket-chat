@@ -1,0 +1,22 @@
+.users-item {
+    padding-left: 5px;
+
+    p {
+        cursor: pointer;
+        padding: 4px 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            margin-right: 7px;
+            border-radius: 50%;
+            background: #79d661;
+        }
+    }
+
+    &:hover {
+        background: #f0f0f0;
+    }
+}
