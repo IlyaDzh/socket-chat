@@ -1,0 +1,22 @@
+.users {
+    height: calc(100% - 56px);
+
+    &__search {
+        padding-bottom: 15px;
+
+        &>span {
+            border: 0;
+            background-color: #f7f8f9;
+            padding: 6px 9px;
+
+            input {
+                background-color: #f7f8f9;
+            }
+        }
+    }
+
+    &__items {
+        height: calc(100% - 49px);
+        overflow: auto;
+    }
+}

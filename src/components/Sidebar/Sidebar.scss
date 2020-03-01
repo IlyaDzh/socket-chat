@@ -1,0 +1,18 @@
+.chat-sidebar {
+    width: 320px;
+    padding: 0 15px 15px 15px;
+    border-right: 1px solid #eaeaea;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+
+        &>div {
+            span[role='img'] {
+                margin-right: 5px;
+            }
+        }
+    }
+}

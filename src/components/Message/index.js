@@ -18,7 +18,7 @@ const getAvatar = avatar => {
 }
 
 const getMessageTime = date => {
-    return format(date, 'HH:mm');
+    return format(Date.parse(date), 'HH:mm');
 }
 
 const AudioMessage = ({ audioSrc, isMe }) => {
@@ -120,7 +120,7 @@ Message.propTypes = {
     text: PropTypes.string,
     audioSrc: PropTypes.string,
     attachments: PropTypes.array,
-    date: PropTypes.instanceOf(Date),
+    date: PropTypes.string,
     isMe: PropTypes.bool
 }
 

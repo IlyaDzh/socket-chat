@@ -1,0 +1,88 @@
+[
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=1",
+        "user": "maksimiva1",
+        "text": "Lorem ipsum dolor sit.",
+        "date": "Sun Mar 01 2020 14:43:22"
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=1",
+        "user": "maksimiva1",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae facere.",
+        "attachments": [
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=3"
+            },
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=4"
+            },
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=5"
+            }
+        ],
+        "date": "Sun Mar 01 2020 14:43:22"
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=21",
+        "user": "ilyadzh",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae facere, nemo sapiente quas perspiciatis laudantium",
+        "date": "Sun Mar 01 2020 14:43:22",
+        "isMe": true
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=1",
+        "user": "maksimiva1",
+        "attachments": [
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=6"
+            }
+        ],
+        "date": "Sun Mar 01 2020 14:43:22"
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=21",
+        "user": "ilyadzh",
+        "text": "Repudiandae facere, nemo sapiente quas perspiciatis laudantium",
+        "attachments": [
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=7"
+            }
+        ],
+        "date": "Sun Mar 01 2020 14:43:22",
+        "isMe": true
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=1",
+        "user": "maksimiva1",
+        "text": "Repudiandae facere",
+        "attachments": [
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=8"
+            },
+            {
+                "filename": "image.jpg",
+                "url": "https://source.unsplash.com/collection/190727/1600x900&rnd=9"
+            }
+        ],
+        "date": "Sun Mar 01 2020 14:43:22"
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=21",
+        "user": "ilyadzh",
+        "audioSrc": "http://www.geocities.ws/Pentagon/Quarters/1604/4bells.wav",
+        "date": "Sun Mar 01 2020 14:43:22",
+        "isMe": true
+    },
+    {
+        "avatar": "https://source.unsplash.com/collection/190727/1600x900&rnd=1",
+        "user": "maksimiva1",
+        "audioSrc": "http://www.soundjay.com/misc/sounds/toy-rattle-1.mp3",
+        "date": "Sun Mar 01 2020 14:43:22"
+    }
+]
