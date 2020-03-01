@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import format from 'date-fns/format';
 
-import { convertCurrentTime } from 'helpers';
+import { convertCurrentTime } from 'utils/helpers';
 import waveSvg from 'assets/wave.svg';
 import waveMeSvg from 'assets/wave-me.svg';
 import playSvg from 'assets/play.svg';

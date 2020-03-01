@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 
+import { usersActions } from 'actions';
 import { Users as BaseUsers } from 'components';
 
-const Users = ({ items }) => {
+const Users = ({ fetchUsers, items }) => {
     const [inputValue, setInputValue] = useState('');
     const [filtred, setFiltredItems] = useState(Array.from(items));
+
+    useEffect(() => {
+        if (!items.length) {
+            fetchUsers();
+        } else {
+            setFiltredItems(items);
+        }
+    }, [items]);
 
     const onChangeInput = value => {
         setFiltredItems(
@@ -22,4 +32,7 @@ const Users = ({ items }) => {
     );
 };
 
-export default Users;
+export default connect(
+    ({ users }) => users,
+    usersActions
+)(Users);
