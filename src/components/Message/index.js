@@ -124,4 +124,4 @@ Message.propTypes = {
     isMe: PropTypes.bool
 }
 
-export default Message
+export default Message;

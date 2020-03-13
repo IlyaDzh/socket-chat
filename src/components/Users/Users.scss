@@ -18,5 +18,11 @@
     &__items {
         height: calc(100% - 49px);
         overflow: auto;
+
+        &--loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

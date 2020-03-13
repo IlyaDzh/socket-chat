@@ -2,9 +2,9 @@ import React from 'react';
 import { Button, Input } from 'antd';
 import { SoundOutlined, PaperClipOutlined } from '@ant-design/icons';
 
-import { Sidebar, Messages, ChatInput } from 'components';
+import { Sidebar, ChatInput } from 'components';
+import { Messages } from 'containers';
 import './Home.scss';
-import MessagesJSON from 'MessagesJSON.json';
 
 const Home = () => {
     return (
@@ -13,10 +13,10 @@ const Home = () => {
                 <Sidebar />
                 <div className='chat-messages'>
                     <div className='chat-messages__header'>
-                        <Input.Search 
-                            style={{marginRight: '5px'}} 
-                            placeholder="Поиск по истории сообщений" 
-                            onSearch={value => console.log(value)} 
+                        <Input.Search
+                            style={{ marginRight: '5px' }}
+                            placeholder="Поиск по истории сообщений"
+                            onSearch={value => console.log(value)}
                         />
                         <Button
                             type="link"
@@ -28,7 +28,7 @@ const Home = () => {
                         </Button>
                     </div>
                     <div className='chat-messages__content'>
-                        <Messages items={MessagesJSON} />
+                        <Messages />
                     </div>
                     <div className='chat-messages__input'>
                         <ChatInput />

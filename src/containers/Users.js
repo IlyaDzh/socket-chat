@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { usersActions } from 'actions';
 import { Users as BaseUsers } from 'components';
 
-const Users = ({ fetchUsers, items }) => {
+const Users = ({ fetchUsers, items, isLoading }) => {
     const [inputValue, setInputValue] = useState('');
     const [filtred, setFiltredItems] = useState(Array.from(items));
 
@@ -28,11 +28,15 @@ const Users = ({ fetchUsers, items }) => {
             items={filtred}
             onSearch={onChangeInput}
             inputValue={inputValue}
+            isLoading={isLoading}
         />
     );
 };
 
 export default connect(
-    ({ users }) => users,
+    ({ users }) => ({
+        items: users.items,
+        isLoading: users.isLoading
+    }),
     usersActions
 )(Users);

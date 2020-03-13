@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input, Empty } from 'antd';
+import { Input, Empty, Spin } from 'antd';
+import classNames from 'classnames'
 
 import { UsersItem } from 'components';
 import './Users.scss';
 
-const Users = ({ items, onSearch, inputValue }) => {
+const Users = ({ items, onSearch, inputValue, isLoading }) => {
     return (
         <div className='users'>
             <div className='users__search'>
@@ -15,13 +16,18 @@ const Users = ({ items, onSearch, inputValue }) => {
                     value={inputValue}
                 />
             </div>
-            <div className='users__items'>
+            <div className={classNames('users__items', { 'users__items--loading': isLoading })}>
                 {
-                    items.length
-                        ? items.map(item => (
-                            <UsersItem key={item.id} fullname={item.fullname} />
-                        ))
-                        : <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="Никого нет в сети" />
+                    isLoading &&
+                        !items.length ? (
+                            <div className="example">
+                                <Spin size='large' />
+                            </div>
+                        ) : items.length
+                            ? items.map(item => (
+                                <UsersItem key={item.id} fullname={item.fullname} />
+                            ))
+                            : <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="Никого нет в сети" />
                 }
             </div>
         </div>
