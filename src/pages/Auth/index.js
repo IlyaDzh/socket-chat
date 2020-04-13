@@ -1,31 +1,16 @@
-import React from 'react';
-import { Form, Input } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import React from "react";
+import { Route } from "react-router-dom";
 
-import { ShadowBlock, Button } from 'components';
-import './Auth.scss';
+import { LoginForm, RegisterForm } from "containers";
+import "./Auth.scss";
 
 const Auth = () => (
-    <section className='auth'>
-        <div className='auth-content'>
-            <div className='auth-content__header'>
-                <h2>Войти в чат</h2>
-                <p>Пожалуйста, введите никнейм</p>
-            </div>
-            <ShadowBlock>
-                <Form className="login-form">
-                    <Form.Item>
-                        <Input
-                            prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
-                            size='large'
-                            placeholder="Никнейм"
-                        />
-                    </Form.Item>
-                    <Button type='primary' size='large'>Войти в чат</Button>
-                </Form>
-            </ShadowBlock>
+    <section className="auth">
+        <div className="auth-content">
+            <Route exact path="/signup" component={RegisterForm} />
+            <Route exact path="/signin" component={LoginForm} />
         </div>
     </section>
 );
 
-export default Auth
+export default Auth;

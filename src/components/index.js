@@ -1,5 +1,7 @@
 export { default as Button } from './Button';
 export { default as ShadowBlock } from './ShadowBlock';
+export { default as LoginForm } from './LoginForm';
+export { default as RegisterForm } from './RegisterForm';
 export { default as Sidebar } from './Sidebar';
 export { default as Users } from './Users';
 export { default as UsersItem } from './UsersItem';

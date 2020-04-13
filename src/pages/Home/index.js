@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Input } from 'antd';
+import { Button } from 'antd';
 import { SoundOutlined, PaperClipOutlined } from '@ant-design/icons';
 
 import { Sidebar, ChatInput } from 'components';
@@ -13,11 +13,6 @@ const Home = () => {
                 <Sidebar />
                 <div className='chat-messages'>
                     <div className='chat-messages__header'>
-                        <Input.Search
-                            style={{ marginRight: '5px' }}
-                            placeholder="Поиск по истории сообщений"
-                            onSearch={value => console.log(value)}
-                        />
                         <Button
                             type="link"
                             icon={<SoundOutlined style={{ fontSize: '20px' }} />}>

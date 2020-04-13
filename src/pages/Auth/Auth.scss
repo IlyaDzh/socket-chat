@@ -25,6 +25,14 @@
         }
     }
 
+    &__register-link {
+        text-align: center;
+        display: block;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        color: #adadad;
+    }
+
     .button {
         text-transform: uppercase;
         font-size: 14px;
